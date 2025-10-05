@@ -22,8 +22,8 @@ public class Point {
 	}
 
 	/*public Point() { //по условию 4.1 низя
-		this.x = 0;
-		this.y = 0;
+		setX(0);
+		setY(0);
 	}*/
 
 	public Point(double x, double y) {
@@ -32,8 +32,8 @@ public class Point {
 	}
 
 	/*public Point(Point point) { //по условию 4.1 низя
-		this.x = point.x;
-		this.y = point.y;
+		setX(point.x);
+		setY(point.y);
 	}*/
 
 	@Override

@@ -7,14 +7,14 @@ void main() {
 	//Point
 	//1.1
 	System.out.println("1.1");
-	System.out.println("Точки");
-	Point p0 = new Point(1,1);
+	System.out.println("Точки:");
+	//Point p0 = new Point();
 	Point p1 = new Point(5, 5);
-	Point p2 = new Point(1.4, 1.6);
+	//Point p2 = new Point(p1);
 
-	System.out.println(p0.toString());
+	//System.out.println(p0.toString());
 	System.out.println(p1.toString());
-	System.out.println(p2.toString());
+	//System.out.println(p2.toString());
 	System.out.println();
 
 	// Line
@@ -30,13 +30,13 @@ void main() {
 
 	Line line3 = new Line(line1.getStart(), line2.getEnd());
 
-	System.out.println("Исходные линии");
+	System.out.println("Исходные линии:");
 	System.out.println(line1.toString());
 	System.out.println(line2.toString());
 	System.out.println(line3.toString());
 	System.out.println();
 
-	System.out.println("Изменение координат в линиях 1 и 2 с изменениями в 3 линии");
+	System.out.println("Изменение координат в линиях 1 и 2 с изменениями в 3 линии:");
 	/*line1.getStart().setX(-1);
 	line1.getStart().setY(-20);
 	line2.getEnd().setX(100);
@@ -49,8 +49,8 @@ void main() {
 	System.out.println(line3.toString());
 	System.out.println();
 
-	System.out.println("Изменение координат в линиях 1 и 2 без изменений в 3 линии");
-	line1.setStart(p0);
+	System.out.println("Изменение координат в линиях 1 и 2 без изменений в 3 линии:");
+	line1.setStart(p1);
 	line2.setEnd(p1);
 	System.out.println(line1.toString());
 	System.out.println(line2.toString());
@@ -60,26 +60,30 @@ void main() {
 	//Student
 	//3.1
 	System.out.println("3.1");
+
 	int[] gradesVasya = {3,4,5};
  	Student studentVasya = new Student("Вася", gradesVasya);
 	Student studentPetya = new Student("Петя", studentVasya.getGrades());
 
+	System.out.println("Создаем оценки Васе и передаем их Пете:");
 	System.out.println(studentVasya.toString());
 	System.out.println(studentPetya.toString());
 	System.out.println();
 
+	System.out.println("Меняем 1-ую оценку Пети:");
 	studentPetya.getGrades()[0] = 5;
 	System.out.println(studentVasya.toString());
 	System.out.println(studentPetya.toString());
 	System.out.println();
 
-
+	System.out.println("Копирование оценок Васи новому студенту Андрею, без 'влияния' оценок Васи на оценки андрея:");
 	Student studentAndrey = new Student("Андрей", studentVasya);
 	System.out.println(studentVasya.toString());
 	System.out.println(studentPetya.toString());
 	System.out.println(studentAndrey.toString());
 	System.out.println();
 
+	System.out.println("Меняем 1-ую оценку Васи:");
 	studentVasya.getGrades()[0] = 3;
 	System.out.println(studentVasya.toString());
 	System.out.println(studentPetya.toString());
@@ -88,6 +92,7 @@ void main() {
 
 	//4.1
 	System.out.println("4.1");
+	System.out.println("Создание точек:");
 	System.out.println(new Point(3,5).toString());
 	System.out.println(new Point(25, 6).toString());
 	System.out.println(new Point(7, 8).toString());
@@ -104,16 +109,17 @@ void main() {
 	System.out.println(line03.toString());
 	System.out.println();
 
-	System.out.println("Изменение координат в линиях 1 и 2 с изменениями в 3 линии");
-
+	System.out.println("Изменение координат в линиях 1 и 2 с изменениями в 3 линии:");
 	line01.setStart(0, 0);
 	line02.setEnd(100, 189);
 	System.out.println(line01.toString());
 	System.out.println(line02.toString());
 	System.out.println(line03.toString());
+	System.out.println();
 
 	//5.3
 	System.out.println("5.3");
-	Line distLine = new Line(-1,1,10,15);
+	System.out.println("Вычисляем длину линии с началом в {1;1} и концом в {10;15}:");
+	Line distLine = new Line(1,1,10,15);
 	System.out.println(distLine.lineLength());
 }

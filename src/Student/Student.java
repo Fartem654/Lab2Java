@@ -26,18 +26,23 @@ public class Student {
 		this.grades = null;
 	}
 
-	public Student(String name,int[] grades) {
+	public Student(String name, int[] grades) {
 		setName(name);
 		setGrades(grades);
 	}
 
 	public Student(String name, Student student) {
 		setName(name);
-		this.grades = new int[student.getGrades().length];
-		for(int i = 0; i < this.grades.length; i++){
-			this.grades[i] = student.getGrades()[i];
+		if (student.grades != null) {
+			this.grades = new int[student.getGrades().length];
+			for (int i = 0; i < this.grades.length; i++) {
+				this.grades[i] = student.getGrades()[i];
+			}
+		}else{
+			this.grades = null;
 		}
 	}
+
 
 	@Override
 	public String toString() {

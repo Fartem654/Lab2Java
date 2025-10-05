@@ -8,13 +8,16 @@ public class Line {
 	private Point end;
 
 	public void setStart(double x, double y) {
-		this.start.setX(x);
-		this.start.setY(y);
+		if (this.start != null) {
+			this.start.setX(x);
+			this.start.setY(y);
+		} else {
+			this.start = new Point(x, y);
+		}
 	}
 
 	public void setStart(Point start) {
 		this.start = start;
-		//startLessEnd();
 	}
 
 	public Point getStart() {
@@ -23,23 +26,25 @@ public class Line {
 
 	public void setEnd(Point end) {
 		this.end = end;
-		//startLessEnd();
 	}
 
 	public void setEnd(double x, double y) {
-		this.end.setX(x);
-		this.end.setY(y);
-		//startLessEnd();
+		if (this.end != null) {
+			this.end.setX(x);
+			this.end.setY(y);
+		} else {
+			this.end = new Point(x, y);
+		}
 	}
 
 	public Point getEnd() {
 		return end;
 	}
 
-	public Line() {
+	/*public Line() {
 		this.start = new Point(0, 0);
 		this.end = new Point(0, 0);
-	}
+	}*/
 
 	public Line(Point start, Point end) { //4.2
 		setStart(start);
@@ -61,7 +66,7 @@ public class Line {
 		double lenX = end.getX() - start.getX();
 		double lenY = end.getY() - start.getY();
 		length = Math.sqrt(lenX * lenX + lenY * lenY);
-		return (int)Math.round(length);
+		return (int) Math.round(length);
 	}
 
 	@Override
