@@ -1,4 +1,3 @@
-<img width="417" height="166" alt="image" src="https://github.com/user-attachments/assets/8e809c94-5c57-42f4-bc08-d19c587388ef" /><h1>Лабораторная работа Java №2</h1>
  <p><strong>Автор</strong>: Фадеев Артём ИТ-12<br>
    <strong>Вариант</strong>: 1<br>
  </p>
