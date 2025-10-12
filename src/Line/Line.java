@@ -7,6 +7,21 @@ public class Line {
 	private Point start;
 	private Point end;
 
+	public Line(Point start, Point end) { //4.2
+		setStart(start);
+		setEnd(end);
+	}
+
+	public Line(double startX, double startY, double endX, double endY) { //4.2
+		setStart(new Point(startX, startY));
+		setEnd(new Point(endX, endY));
+	}
+
+	public Line(Line line) {
+		this.start = line.start;
+		this.end = line.end;
+	}
+
 	public void setStart(double x, double y) {
 		if (this.start != null) {
 			this.start.setX(x);
@@ -16,17 +31,18 @@ public class Line {
 		}
 	}
 
-	public void setStart(Point start) {
-		this.start = start;
-	}
-
 	public Point getStart() {
 		return start;
 	}
 
-	public void setEnd(Point end) {
-		this.end = end;
+	public void setStart(Point start) {
+		this.start = start;
 	}
+
+	/*public Line() {
+		this.start = new Point(0, 0);
+		this.end = new Point(0, 0);
+	}*/
 
 	public void setEnd(double x, double y) {
 		if (this.end != null) {
@@ -41,24 +57,8 @@ public class Line {
 		return end;
 	}
 
-	/*public Line() {
-		this.start = new Point(0, 0);
-		this.end = new Point(0, 0);
-	}*/
-
-	public Line(Point start, Point end) { //4.2
-		setStart(start);
-		setEnd(end);
-	}
-
-	public Line(double startX, double startY, double endX, double endY) { //4.2
-		setStart(new Point(startX, startY));
-		setEnd(new Point(endX, endY));
-	}
-
-	public Line(Line line) {
-		this.start = line.start;
-		this.end = line.end;
+	public void setEnd(Point end) {
+		this.end = end;
 	}
 
 	public int lineLength() {
