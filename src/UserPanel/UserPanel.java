@@ -129,7 +129,7 @@ public class UserPanel {
 	}
 
 	private void t41() {
-		System.out.println("Задание 1");
+		System.out.println("Задание 4.1");
 
 		System.out.println("Введите координаты первой точки: ");
 		Point p1 = createPoint();
