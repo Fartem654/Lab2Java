@@ -182,7 +182,7 @@ public class UserPanel {
 	}
 
 	private void t5() {
-		System.out.println("5.3");
+		System.out.println("Задание 5");
 		System.out.println("Вычисление длинны линии:");
 		Line distLine = new Line(inputDouble("Введите x начала линии 1: "),
 				inputDouble("Введите y начала линии 1: "), inputDouble("Введите x конца линии 1: "),
