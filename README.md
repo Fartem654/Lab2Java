@@ -1,4 +1,4 @@
-<h1>Лабораторная работа Java №2</h1>
+<img width="417" height="166" alt="image" src="https://github.com/user-attachments/assets/8e809c94-5c57-42f4-bc08-d19c587388ef" /><h1>Лабораторная работа Java №2</h1>
  <p><strong>Автор</strong>: Фадеев Артём ИТ-12<br>
    <strong>Вариант</strong>: 1<br>
  </p>
@@ -57,10 +57,11 @@
   <li>Переопределяется метод <code>toString()</code>, возвращающий строку вида <code>{x;y}</code>.</li>
   <li>В методе <code>main</code> создаются и выводятся три точки: <code>p0 = (0;0)</code>, <code>p1 = (5;5)</code>, <code>p3 = (5;5)</code>.</li>
 </ul>
-
+<h4>Тесты</h4>
+<img width="1417" height="692" alt="image" src="https://github.com/user-attachments/assets/1cc645c2-9b5b-4b40-bf3b-6bfcca97acf7" />
 <hr>
 
-<h3 id="зыдание2">Задание 2.1</h3>
+<h3 id="задание2">Задание 2.1</h3>
 <p><strong>Текст задачи:</strong><br></p>
 <p>Создайте сущность Линия, расположенную на двумерной плоскости, которая описывается:</p>
 <ul>
@@ -104,7 +105,9 @@
     </ul>
   </li>
 </ul>
-
+<h4>Тесты</h4>
+<img width="1221" height="742" alt="image" src="https://github.com/user-attachments/assets/2e368c43-f624-4e87-b136-8b8884526378" />
+<img width="1122" height="571" alt="image" src="https://github.com/user-attachments/assets/75cfe5b0-f1e7-4997-99e3-56978a66f7da" />
 <hr>
 
 <h3 id="задание3">Задание 3.1</h3>
@@ -143,7 +146,8 @@
     </ul>
   </li>
 </ul>
-
+<h4>Тесты</h4>
+<img width="1085" height="650" alt="image" src="https://github.com/user-attachments/assets/8e588dfb-6bba-4c67-b288-c8744ecdc335" />
 <hr>
 
 <h3 id="задание41">Задание 4.1</h3>
@@ -159,6 +163,8 @@
 <p><strong>Алгоритм решения:</strong><br>
   Убираются конструкторы по умолчанию и копирования, остается конструктор с явным указанием координат. В <code>main</code> выводятся 3 необходимые точки.
 </p>
+<h4>Тесты</h4>
+<img width="518" height="316" alt="image" src="https://github.com/user-attachments/assets/414297f0-f456-4a9e-b6ac-cb940319849a" />
 
 <hr>
 
@@ -183,7 +189,9 @@
   </ul>
    В <code>main</code> создаются и выводятся необходимые точки.
 </p>
-
+<h4>Тесты</h4>
+<img width="1196" height="625" alt="image" src="https://github.com/user-attachments/assets/c5f4cd02-02de-4176-b6f7-5f45b90427c5" />
+<hr>
 <h3 id="задание5">Задание 5.3</h3>
 <p><strong>Текст задачи:</strong><br></p>
 <p>Измените сущность Линия из задачи 4.2. Добавьте ей возможность возвращать по запросу пользователя расстояние между точками начала и конца (в виде целого числа).</p>
@@ -205,6 +213,12 @@
     </ul>
   </li>
 </ul>
+<h4>Тесты</h4>
+<div style="display:flex;">
+ <img width="417" height="166" alt="image" src="https://github.com/user-attachments/assets/640c3ce2-8489-46f4-918b-a5099008d3ae" />
+ <img width="477" height="167" alt="image" src="https://github.com/user-attachments/assets/59056fea-03e1-41ae-9ed4-68bc57067de7" />
+ </div>
+<hr>
 
 <h2 id="структура-проекта">Структура проекта</h2>
 <pre>
